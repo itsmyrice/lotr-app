@@ -7,6 +7,7 @@ export default function theFellowshipOfTheRing() {
   const volume1 = volumes.find(
     ({ slug }) => slug === "the-fellowship-of-the-ring"
   );
+
   return (
     <div>
       <Head>
@@ -19,8 +20,8 @@ export default function theFellowshipOfTheRing() {
         {volume1.books.map((book) => {
           return (
             <li key={book.slug}>
-              <small>{book.ordinal}</small>
-              <small>{book.title}</small>
+              <small>{book.ordinal}:</small>
+              <strong>{book.title}</strong>
             </li>
           );
         })}

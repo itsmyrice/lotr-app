@@ -19,8 +19,8 @@ export default function theTwoTowers() {
          {volume2.books.map((book) => {
             return (
             <li key={book.slug}>
-            <small>{book.ordinal}</small>
-            <small>{book.title}</small>
+            <small>{book.ordinal}:</small>
+            <strong>{book.title}</strong>
             </li>)
             })}
         </ul>
